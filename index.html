@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KIZZY PRESET</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #08080d;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #24242d;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #9b5cff;
+}
+
+.hero {
+    padding: 45px 20px;
+    text-align: center;
+    background:
+        radial-gradient(circle, #32166b 0%, #08080d 65%);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #9b5cff;
+}
+
+.hero p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 35px 0;
+}
+
+.search {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #292934;
+    background: #111117;
+    color: white;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.search:focus {
+    border-color: #9b5cff;
+}
+
+.preset {
+    background: #111117;
+    border: 1px solid #25252f;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #17171f;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    padding: 18px;
+}
+
+.info h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.alight {
+    background: #9b5cff;
+    color: white;
+}
+
+.xml {
+    background: #22222c;
+    color: white;
+}
+
+.alight:hover {
+    background: #8141e8;
+}
+
+.xml:hover {
+    background: #30303c;
+}
+
+.tag {
+    display: inline-block;
+    background: #281744;
+    color: #b98aff;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    padding: 30px;
+    border-top: 1px solid #222;
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>KIZZY</span> PRESET
+    </div>
+</header>
+
+<section class="hero">
+    <h1>KIZZY <span>PRESET</span></h1>
+
+    <p>
+        Koleksi preset Alight Motion untuk editing
+        JJ, Velocity, Shake, dan lainnya.
+    </p>
+</section>
+
+<main class="container">
+
+    <input
+        class="search"
+        type="text"
+        id="search"
+        placeholder="🔎 Cari preset..."
+        onkeyup="searchPreset()"
+    >
+
+    <!-- PRESET 1 -->
+    <div class="preset">
+
+        <div class="video">
+            <video controls poster="">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="info">
+
+            <span class="tag">JJ</span>
+
+            <h2>JJ Smooth V1</h2>
+
+            <p>
+                Preset jedag-jedug smooth untuk Alight Motion.
+            </p>
+
+            <div class="buttons">
+
+                <!-- GANTI LINK INI -->
+                <a
+                    class="alight"
+                    href="https://alightcreative.com/"
+                    target="_blank"
+                >
+                    🔗 Alight Creative
+                </a>
+
+                <!-- GANTI FILE INI -->
+                <a
+                    class="xml"
+                    href="preset1.xml"
+                    download
+                >
+                    📥 Download XML
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PRESET 2 -->
+    <div class="preset">
+
+        <div class="video">
+            <video controls poster="">
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="info">
+
+            <span class="tag">VELOCITY</span>
+
+            <h2>Velocity V1</h2>
+
+            <p>
+                Preset velocity untuk editan cepat dan smooth.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="alight"
+                    href="https://alightcreative.com/"
+                    target="_blank"
+                >
+                    🔗 Alight Creative
+                </a>
+
+                <a
+                    class="xml"
+                    href="velocity1.xml"
+                    download
+                >
+                    📥 Download XML
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 KIZZY PRESET
+</footer>
+
+
+<script>
+
+function searchPreset() {
+
+    let input =
+        document
+        .getElementById("search")
+        .value
+        .toLowerCase();
+
+    let presets =
+        document.querySelectorAll(".preset");
+
+    presets.forEach(function(preset) {
+
+        let text =
+            preset.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            preset.style.display = "";
+        } else {
+            preset.style.display = "none";
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
